@@ -17,7 +17,7 @@ The list of files should be printed to the console, one file per line. You must 
 // of the files in the directory excluding '.' and '..'.
 
 var fs = require('fs');
-// add "." so that we can accurately tell if 
+// add "." so that we can accurately determine the given file extension
 var extension = "." + process.argv[3];
 
 fs.readdir(process.argv[2], function(error, list) {
